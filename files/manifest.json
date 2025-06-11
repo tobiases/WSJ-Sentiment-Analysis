@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Financial News Sentiment Analyzer",
+  "version": "1.0",
+  "description": "Scrape financial headlines and classify as bullish or bearish.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.wsj.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.wsj.com/*"],
+      "js": ["scripts/content_wsjscript.js"]
+    }
+  ]
+}

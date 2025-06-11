@@ -1,0 +1,136 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  min-width: 320px;
+  background: #fcfcfc;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  padding: 16px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#headline-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  margin: 12px 0 16px 0;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+button:hover {
+  background: #eaeaea;
+  box-shadow: 0 1px 6px #eee;
+}
+
+#result {
+  margin-bottom: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sentiment-percentage {
+  font-size: 3rem;
+  text-align: center;
+  margin: 18px 0 10px 0;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+#sentiment-percentages {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  width: 100%;
+}
+.percent-bullish { color: #24cc7b; font-weight: 600; }
+.percent-neutral { color: #a8a8a8; font-weight: 600; }
+.percent-bearish { color: #f14d5d; font-weight: 600; }
+
+#sentiment-bar-container {
+  width: 100%;
+  margin: 6px 0 12px 0;
+  display: flex;
+  justify-content: center;
+}
+#sentiment-bar {
+  width: 90%;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+#bar-bullish {
+  background: #24cc7b;
+  height: 100%;
+  transition: width 0.6s;
+}
+#bar-neutral {
+  background: #a8a8a8;
+  height: 100%;
+  transition: width 0.6s;
+}
+#bar-bearish {
+  background: #f14d5d;
+  height: 100%;
+  transition: width 0.6s;
+}
+
+#dropdown-headlines {
+  margin-top: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+#dropdown-headlines summary {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 5px 0;
+}
+#headline-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  max-height: 160px;
+  overflow-y: auto;
+  font-size: 0.96rem;
+}
+#headline-list li {
+  margin-bottom: 6px;
+  padding: 2px 0 2px 0;
+  border-left: 4px solid transparent;
+  padding-left: 8px;
+}
+#headline-list li.bullish { color: #159b5b; border-color: #24cc7b;}
+#headline-list li.bearish { color: #f14d5d; border-color: #f14d5d;}
+#headline-list li.neutral { color: #a8a8a8; border-color: #a8a8a8;}
+
+#status {
+  margin: 12px 0 0 0;
+  color: #777;
+  font-size: 0.98rem;
+  min-height: 18px;
+  text-align: center;
+}

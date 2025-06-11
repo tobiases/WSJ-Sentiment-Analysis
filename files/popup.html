@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Financial News Sentiment</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="container">
+    <h2 id="headline-title">Headline Sentiment</h2>
+    <button id="scrape">Analyze Headlines</button>
+    <div id="result">
+      <div id="sentiment-percentage"></div>
+      <div id="sentiment-percentages"></div>
+      <div id="sentiment-bar-container">
+        <div id="sentiment-bar">
+          <div id="bar-bullish"></div>
+          <div id="bar-neutral"></div>
+          <div id="bar-bearish"></div>
+        </div>
+      </div>
+    </div>
+    <button id="copy">Copy Headlines to Clipboard</button>
+    <details id="dropdown-headlines">
+      <summary>Show All Headlines</summary>
+      <ul id="headline-list"></ul>
+    </details>
+    <div id="status"></div>
+  </div>
+  <script src="scripts/sentiment.js"></script>
+  <script src="scripts/popup.js"></script>
+</body>
+</html>
