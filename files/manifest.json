@@ -20,8 +20,8 @@
     }
   ],
   "icons": {
-    "16": "files/files/16x16.png",
-    "48": "files/files/48x48.png",
-    "128": "files/files/128x128.png"
+    "16": "files/icons/16x16.png",
+    "48": "files/icons/48x48.png",
+    "128": "files/icons/128x128.png"
   }
 }
