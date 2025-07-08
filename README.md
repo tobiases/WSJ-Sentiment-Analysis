@@ -1,4 +1,5 @@
 # WSJ-Sentiment-Analysis
+![image](https://github.com/user-attachments/assets/3f4394b1-f402-41d4-860d-2699423f9532)
 
 This folder contains files related to the Wall Street Journal Sentiment Analysis project. The project aims to analyze sentiment in WSJ articles using data processing and machine learning techniques.
 
